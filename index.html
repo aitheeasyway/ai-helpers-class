@@ -4,6 +4,8 @@
 <script>
   /* ==== SWAP ME: paste the real Google Form link here ==== */
   const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdepCBxrSrhYaWDYk44S-DmO_U61R7yPPQSQwAhPI9A4WIGMA/viewform";
+  const MESSENGER_URL = "https://m.me/aitheeasyway";
+  const X_URL = "https://x.com/aitheeasyway";
   const FACEBOOK_URL = "https://facebook.com/aitheeasyway";
 </script>
 <meta charset="utf-8">
@@ -284,7 +286,7 @@ footer a:hover{color:var(--teal)}
     <div class="guide-box reveal">
       <div class="photo" role="img" aria-label="Photo of Chris Booth coming soon">
         <!-- Replace this block with: <img src="chris.jpg" alt="Chris Booth" style="width:100%;height:100%;object-fit:cover"> -->
-        <div class="ph"><b>CB</b>Photo coming soon</div>
+        <div class="ph"><b>Chris Booth</b>Photo coming soon</div>
       </div>
       <div>
         <span class="eyebrow o">Your guide</span>
@@ -328,7 +330,8 @@ footer a:hover{color:var(--teal)}
       <p>Hop on the waitlist. No pressure, no spam. Just a heads-up when seats open.</p>
       <div class="cta-row">
         <a class="btn btn-sunset" data-form href="https://docs.google.com/forms/d/e/1FAIpQLSdepCBxrSrhYaWDYk44S-DmO_U61R7yPPQSQwAhPI9A4WIGMA/viewform" target="_blank" rel="noopener">Join the waitlist <span class="arrow">→</span></a>
-        <a class="btn btn-ghost" data-fb href="https://facebook.com/aitheeasyway" target="_blank" rel="noopener">Say hi on Facebook</a>
+        <a class="btn btn-ghost" data-msg href="https://m.me/aitheeasyway" target="_blank" rel="noopener">Message me on Messenger</a>
+        <a class="btn btn-ghost" data-x href="https://x.com/aitheeasyway" target="_blank" rel="noopener">Follow on X</a>
       </div>
       <svg class="waves" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
         <path d="M0 50 Q150 20 300 50 T600 50 T900 50 T1200 50 V90 H0Z" fill="rgba(255,138,61,.18)"/>
@@ -342,7 +345,9 @@ footer a:hover{color:var(--teal)}
   <div class="wrap">
     <div><a class="logo" href="#top"><span class="logo-dot">✦</span>AI the Easy Way</a><div style="margin-top:10px">Lake of the Ozarks, Missouri · © <span id="yr">2026</span></div></div>
     <div style="display:flex;gap:22px;flex-wrap:wrap">
-      <a class="fb" data-fb href="https://facebook.com/aitheeasyway" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>facebook.com/aitheeasyway</a>
+      <a class="fb" data-msg href="https://m.me/aitheeasyway" target="_blank" rel="noopener">Messenger</a>
+      <a data-x href="https://x.com/aitheeasyway" target="_blank" rel="noopener">X @aitheeasyway</a>
+      <a data-fb href="https://facebook.com/aitheeasyway" target="_blank" rel="noopener">Facebook</a>
       <a data-form href="https://docs.google.com/forms/d/e/1FAIpQLSdepCBxrSrhYaWDYk44S-DmO_U61R7yPPQSQwAhPI9A4WIGMA/viewform" target="_blank" rel="noopener">Join the waitlist</a>
     </div>
   </div>
@@ -350,6 +355,8 @@ footer a:hover{color:var(--teal)}
 
 <script>
   document.querySelectorAll('[data-form]').forEach(a => a.href = GOOGLE_FORM_URL);
+  document.querySelectorAll('[data-msg]').forEach(a => a.href = MESSENGER_URL);
+  document.querySelectorAll('[data-x]').forEach(a => a.href = X_URL);
   document.querySelectorAll('[data-fb]').forEach(a => a.href = FACEBOOK_URL);
   document.getElementById('yr').textContent = new Date().getFullYear();
   const els = document.querySelectorAll('.reveal');
