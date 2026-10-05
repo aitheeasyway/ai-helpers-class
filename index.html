@@ -52,8 +52,10 @@ body{position:relative}
 
 /* nav */
 nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(10,15,31,.65);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{display:flex;align-items:center;gap:10px;font-family:"Space Grotesk";font-weight:700;text-decoration:none;font-size:18px}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Space Grotesk";font-weight:700;text-decoration:none;font-size:18px;color:var(--text)}
+.logo-mark{height:40px;width:auto;display:block;flex-shrink:0;background:#fff;border-radius:10px;padding:4px 8px;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
+.logo-text{line-height:1.1}
 .logo-dot{width:30px;height:30px;border-radius:9px;background:var(--grad);display:grid;place-items:center;color:#0a0f1f;font-size:15px;box-shadow:0 0 18px rgba(46,242,224,.45)}
 .nav-links{display:flex;gap:26px;align-items:center;font-size:15px;color:var(--muted)}
 .nav-links a{text-decoration:none;transition:color .2s}
@@ -221,7 +223,7 @@ footer a:hover{color:var(--teal)}
 
 <nav>
   <div class="wrap">
-    <a class="logo" href="#top"><span class="logo-dot">✦</span>AI the Easy Way</a>
+    <a class="logo" href="#top" aria-label="AI the Easy Way"><img class="logo-mark" src="assets/logo-ai-the-easy-way.webp" width="160" height="137" alt="AI the Easy Way"></a>
     <div class="nav-links">
       <a href="#get">What you get</a>
       <a href="#how">How it works</a>
@@ -381,7 +383,7 @@ footer a:hover{color:var(--teal)}
 
 <footer>
   <div class="wrap">
-    <div><a class="logo" href="#top"><span class="logo-dot">✦</span>AI the Easy Way</a><div style="margin-top:10px">Lake of the Ozarks, Missouri · © <span id="yr">2026</span></div></div>
+    <div><a class="logo" href="#top" aria-label="AI the Easy Way"><img class="logo-mark" src="assets/logo-ai-the-easy-way.webp" width="160" height="137" alt="AI the Easy Way"></a><div style="margin-top:10px">Lake of the Ozarks, Missouri · © <span id="yr">2026</span></div></div>
     <div style="display:flex;gap:22px;flex-wrap:wrap">
       <a class="fb" data-msg href="https://m.me/aitheeasyway" target="_blank" rel="noopener">Messenger</a>
       <a data-x href="https://x.com/aitheeasyway" target="_blank" rel="noopener">X @aitheeasyway</a>

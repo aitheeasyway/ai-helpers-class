@@ -27,6 +27,7 @@ a:hover{text-decoration:underline}
 .wrap{width:min(760px,100% - 40px);margin-inline:auto}
 header{padding:28px 0 8px;display:flex;justify-content:space-between;align-items:center;gap:16px}
 .logo{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--text);text-decoration:none}
+.logo-mark{height:44px;width:auto;display:block;background:#fff;border-radius:10px;padding:4px 8px;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
 .logo-dot{width:28px;height:28px;border-radius:8px;background:var(--grad);display:grid;place-items:center;color:#0a0f1f;font-size:14px}
 .pill{display:inline-flex;padding:6px 12px;border-radius:999px;border:1px solid rgba(255,138,61,.4);background:rgba(255,138,61,.08);color:#ffc49c;font-size:13px;font-weight:600}
 .hero{padding:36px 0 20px}
@@ -53,7 +54,7 @@ video{display:block;width:100%;aspect-ratio:16/9;background:#000}
 <body>
 <div class="wrap">
   <header>
-    <a class="logo" href="./"><span class="logo-dot">AI</span> AI the Easy Way</a>
+    <a class="logo" href="./" aria-label="AI the Easy Way"><img class="logo-mark" src="assets/logo-ai-the-easy-way.webp" width="160" height="137" alt="AI the Easy Way"></a>
     <span class="pill">Class prep · attendees</span>
   </header>
 
@@ -126,8 +127,8 @@ video{display:block;width:100%;aspect-ratio:16/9;background:#000}
   </section>
 
   <footer class="footer">
-    <span>Chris Booth · AI the Easy Way</span>
-    <span><a href="./">← Back to class page</a> · <a href="https://facebook.com/aitheeasyway" target="_blank" rel="noopener">Facebook</a></span>
+    <a class="logo" href="./" aria-label="AI the Easy Way"><img class="logo-mark" src="assets/logo-ai-the-easy-way.webp" width="140" height="120" alt="AI the Easy Way" style="height:36px"></a>
+    <span>Chris Booth · AI the Easy Way · <a href="./">← Back to class page</a> · <a href="https://facebook.com/aitheeasyway" target="_blank" rel="noopener">Facebook</a></span>
   </footer>
 </div>
 </body>
