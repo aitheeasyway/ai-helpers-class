@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /front-desk-helper/
+
+Sitemap: https://mysihelpers.com/sitemap.xml
