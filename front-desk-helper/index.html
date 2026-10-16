@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Front Desk Helper | AI the Easy Way</title>
+<style>
+:root{--navy:#0f1d3a;--gold:#f2b705;--ink:#1d2433;--soft:#f6f4ee}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.5}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{background:var(--navy);color:#fff;padding:14px 0}header .wrap{display:flex;align-items:center;gap:10px}
+header img{height:44px;background:#fff;border-radius:10px;padding:4px}header b{font-size:18px}
+.hero{background:linear-gradient(160deg,var(--navy),#1b3266);color:#fff;padding:40px 0 48px}
+.hero .wrap{display:grid;gap:28px}@media(min-width:860px){.hero .wrap{grid-template-columns:1.2fr 1fr;align-items:center}}
+h1{font-size:34px;line-height:1.15;margin:0 0 12px}h1 span{color:var(--gold)}
+.hero p{font-size:18px;opacity:.92;margin:0}
+form{background:#fff;color:var(--ink);border-radius:16px;padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+label{display:block;font-weight:600;font-size:14px;margin:10px 0 4px}input{width:100%;padding:12px;border:1px solid #cfd5e0;border-radius:10px;font-size:16px}
+.btn{display:block;width:100%;margin-top:16px;padding:14px;border:0;border-radius:10px;background:var(--gold);color:var(--navy);font-weight:800;font-size:17px;text-align:center;text-decoration:none}
+.tiny{font-size:12px;color:#667;margin-top:8px}
+section{padding:44px 0}section.alt{background:var(--soft)}h2{font-size:26px;margin:0 0 18px}
+.steps{display:grid;gap:16px}@media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+.card{background:#fff;border-radius:14px;padding:20px;border:1px solid #e6e2d6}.num{display:inline-block;width:34px;height:34px;border-radius:50%;background:var(--gold);color:var(--navy);font-weight:800;text-align:center;line-height:34px;margin-bottom:8px}
+.call{max-width:640px;display:grid;gap:10px}.msg{padding:12px 14px;border-radius:14px;max-width:85%}.ai{background:var(--navy);color:#fff}.caller{background:#e9edf5;justify-self:end}
+.msg small{display:block;font-weight:700;opacity:.7;font-size:11px;text-transform:uppercase}
+.price{font-size:22px;font-weight:800}.pill{display:inline-block;background:#fff3c4;color:#7a5b00;border-radius:999px;padding:3px 10px;font-size:12px;font-weight:700}
+.cta{background:var(--navy);color:#fff;text-align:center}.cta .btn{max-width:360px;margin:16px auto 0}
+footer{padding:22px 0;font-size:13px;color:#667;text-align:center}
+</style></head><body>
+<header><div class="wrap"><img src="/assets/logo-ai-the-easy-way.webp" alt="AI the Easy Way"><b>Front Desk Helper</b></div></header>
+<div class="hero"><div class="wrap">
+<div><h1>Hear your business answered by AI <span>in 2 minutes.</span></h1>
+<p>Never miss a call again. Enter your website, and we'll build a friendly AI phone assistant that answers questions, books appointments, and takes messages, so your team gets time back.</p></div>
+<form onsubmit="event.preventDefault();alert('Mockup only: nothing was sent.')">
+<strong>Get your free demo call</strong>
+<label>Your name</label><input placeholder="Jane Smith">
+<label>Business phone</label><input type="tel" placeholder="(573) 555-0123">
+<label>Business website</label><input type="url" placeholder="https://yourbusiness.com">
+<button class="btn">Call me with my demo</button>
+<div class="tiny">Mockup. We'll call you once with your demo. The assistant always says it's an AI.</div>
+</form></div></div>
+<section><div class="wrap"><h2>How it works</h2><div class="steps">
+<div class="card"><div class="num">1</div><h3>Enter your website</h3><p>We read your pages for your hours, services, location, and common questions.</p></div>
+<div class="card"><div class="num">2</div><h3>Hear your demo call</h3><p>Your phone rings, and you hear your business answered the way you'd want it.</p></div>
+<div class="card"><div class="num">3</div><h3>Go live</h3><p>Forward missed or after-hours calls. It books on your calendar and texts you messages.</p></div>
+</div></div></section>
+<section class="alt"><div class="wrap"><h2>Sample call</h2><div class="call">
+<div class="msg ai"><small>Assistant</small>Thanks for calling Diesels &amp; Diamonds! This is the virtual assistant, an AI helper for the team. How can I help?</div>
+<div class="msg caller"><small>Caller</small>Do you still have that white GMC 3500 diesel?</div>
+<div class="msg ai"><small>Assistant</small>Our current trucks are on our website, and I'd hate to guess on availability. Want me to set up a time to see it, and have the team confirm it's still here?</div>
+<div class="msg caller"><small>Caller</small>Yeah, Saturday morning?</div>
+<div class="msg ai"><small>Assistant</small>I have 9:30 or 11:00 on Saturday. Which works? And what's the best number for you?</div>
+<div class="msg caller"><small>Caller</small>9:30. 573-555-0142.</div>
+<div class="msg ai"><small>Assistant</small>You're set for Saturday at 9:30 at 343 Highway 42 in Kaiser. We'll text you a confirmation. Anything else?</div>
+</div><p class="tiny">Sample conversation for illustration.</p></div></section>
+<section><div class="wrap"><h2>Simple pricing</h2><div class="card" style="max-width:480px">
+<span class="pill">PLACEHOLDER</span><p class="price">Setup $50 + monthly plan, TBD</p>
+<p>Includes your phone assistant, calendar booking, and message texts. No contract.</p></div></div></section>
+<section class="cta"><div class="wrap"><h2>New to AI? Start with a free class.</h2>
+<p>Beginner friendly, no tech skills needed. See how AI helpers work, live.</p>
+<a class="btn" href="https://free.mysihelpers.com">Save my free seat</a></div></section>
+<footer><div class="wrap">© AI the Easy Way · mysihelpers.com<br>Grok is a trademark of xAI. Independent, not affiliated with xAI.</div></footer>
+</body></html>
